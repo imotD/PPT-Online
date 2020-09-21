@@ -1,5 +1,5 @@
 {
-  "name": "reveal.js",
+  "name": "ppt-online",
   "version": "4.0.2",
   "description": "The HTML Presentation Framework",
   "homepage": "https://revealjs.com",
@@ -9,14 +9,11 @@
   "license": "MIT",
   "scripts": {
     "test": "gulp test",
-    "start": "gulp serve",
-    "build": "gulp"
+    // "start": "gulp serve",
+    "start": "node index.js"
+    "build": "gulp",
   },
-  "author": {
-    "name": "Hakim El Hattab",
-    "email": "hakim.elhattab@gmail.com",
-    "web": "https://hakim.se"
-  },
+  "author": "Hakim El Hattab <hakim.elhattab@gmail.com> (https://hakim.se)",
   "repository": {
     "type": "git",
     "url": "git://github.com/hakimel/reveal.js.git"
@@ -95,5 +92,18 @@
       "no-eq-null": 2,
       "no-unused-expressions": 0
     }
+  },
+  "bugs": {
+    "url": "https://github.com/hakimel/reveal.js/issues"
+  },
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {
+    "bindings": "^1.5.0",
+    "file-uri-to-path": "^1.0.0",
+    "fsevents": "^1.2.12",
+    "node-static": "^0.7.11"
   }
 }
